@@ -141,7 +141,7 @@ module.exports = class Server {
 
   listen(callback) {
     this.httpServer.listen(process.env.DEFAULT_PORT, () =>
-      callback(process.env.DEFAULT_PORT || 5000)
+      callback(process.env.DEFAULT_PORT)
     );
   }
 };
